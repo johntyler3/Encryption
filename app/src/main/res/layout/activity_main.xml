@@ -26,7 +26,7 @@
             android:maxLines="15" />
 
         <Button
-        android:id="@+id/button"
+        android:id="@+id/EncodeButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
@@ -35,6 +35,17 @@
         android:paddingRight="16dp"
         android:onClick="encode"
         android:text="Encode" />
+
+        <Button
+            android:id="@+id/DecodeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@+id/editText"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:onClick="decode"
+            android:text="Decode" />
     </LinearLayout>
 
 
