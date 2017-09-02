@@ -16,12 +16,31 @@
         tools:layout_editor_absoluteY="2dp">
 
         <TextView
+            android:id="@+id/editText4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="20"
+            android:inputType="textPersonName"
+            android:text="The Encrypted Text : "
+            android:textSize="20sp"/>
+
+        <EditText
             android:id="@+id/encryptedText"
             android:layout_width="match_parent"
             android:layout_height="205dp"
-            android:text="TextView" />
+            android:text="TextView"
+            android:textSize="16sp"/>
 
         <TextView
+            android:id="@+id/editText3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="20"
+            android:textSize="20sp"
+            android:inputType="textPersonName"
+            android:text="The Encryption Key : " />
+
+        <EditText
             android:id="@+id/key"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

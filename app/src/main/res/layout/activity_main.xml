@@ -46,6 +46,16 @@
             android:paddingRight="16dp"
             android:onClick="decode"
             android:text="Decode" />
+
+        <EditText
+            android:id="@+id/keyText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:lines="8"
+            android:maxLines="15" />
     </LinearLayout>
 
 
