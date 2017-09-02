@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Cipher</string>
+    <string name="app_name">Encrypt.Me</string>
+    <string name="about_string">This app uses the popular encrption algorithm AES to encrypt your text.</string>
 </resources>

@@ -4,74 +4,90 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
     tools:context="john.cipher.MainActivity"
     tools:layout_editor_absoluteY="81dp"
     tools:layout_editor_absoluteX="0dp">
 
-    <LinearLayout
-        android:layout_width="328dp"
-        android:layout_height="479dp"
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="5dp"
         android:orientation="vertical"
         android:layout_gravity="center"
-        android:weightSum="1">
+        android:weightSum="1"
+        android:background="@drawable/background_gradient">
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/YourMessageText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
+            android:textSize="20sp"
             android:text="Enter you message here : " />
 
         <EditText
             android:id="@+id/editText"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
+            android:layout_below="@id/YourMessageText"
             android:ems="10"
             android:inputType="textMultiLine"
             android:lines="8"
             android:maxLines="15" />
 
-        <Button
-        android:id="@+id/EncodeButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_below="@+id/editText"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        android:onClick="encode"
-        android:text="Encode" />
-
-        <Button
-            android:id="@+id/DecodeButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_below="@+id/editText"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:onClick="decode"
-            android:text="Decode" />
-
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/YourKeyText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
+            android:layout_below="@id/editText"
+            android:textSize="20sp"
             android:text="Enter your Key here : " />
 
         <EditText
             android:id="@+id/keyText"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
+            android:layout_below="@id/YourKeyText"
             android:ems="10"
             android:inputType="textMultiLine"
             android:lines="8"
             android:maxLines="15" />
-    </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="7dp"
+            android:layout_below="@+id/keyText">
+
+            <Button
+                android:id="@+id/EncodeButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="left"
+                android:onClick="encode"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="Encode" />
+
+            <Button
+                android:id="@+id/DecodeButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="right"
+                android:onClick="decode"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="Decode" />
+
+        </LinearLayout>
+    </RelativeLayout>
 
     <android.support.constraint.Guideline
         android:layout_width="wrap_content"

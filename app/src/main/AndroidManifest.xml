@@ -16,8 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AES"></activity>
-        <activity android:name=".Decryption"></activity>
+        <activity android:name=".AES" />
+        <activity android:name=".Decryption" />
+        <activity android:name=".About"></activity>
     </application>
 
 </manifest>
