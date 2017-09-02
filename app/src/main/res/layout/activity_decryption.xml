@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="john.cipher.AES">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:weightSum="1"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="2dp">
+
+        <TextView
+            android:id="@+id/editText5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="20"
+            android:inputType="textPersonName"
+            android:text="The Decrypted Text : "
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/decryptedText"
+            android:layout_width="match_parent"
+            android:layout_height="205dp"
+            android:text="TextView"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/editText6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="20"
+            android:textSize="20sp"
+            android:inputType="textPersonName"
+            android:text="Your Key : " />
+
+        <EditText
+            android:id="@+id/yourKey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/encryptedText"
+            android:text="TextView"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
