@@ -16,46 +16,54 @@
         android:layout_marginRight="30dp"
         android:layout_marginTop="5dp"
         android:orientation="vertical"
-        android:layout_gravity="center"
-        android:weightSum="1"
-        android:background="@drawable/background_gradient">
+        android:weightSum="1">
 
         <TextView
             android:id="@+id/YourMessageText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             android:textSize="20sp"
-            android:text="Enter you message here : " />
+            android:text="@string/enter_message"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
 
         <EditText
             android:id="@+id/editText"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
+            android:layout_height="250dp"
+            android:layout_gravity="top|left"
             android:layout_below="@id/YourMessageText"
-            android:ems="10"
+            android:padding="10dp"
             android:inputType="textMultiLine"
+            android:textSize="16sp"
             android:lines="8"
-            android:maxLines="15" />
+            android:maxLines="15"
+            android:background="@drawable/round_text"/>
 
         <TextView
             android:id="@+id/YourKeyText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/editText"
+            android:layout_marginTop="20dp"
             android:textSize="20sp"
-            android:text="Enter your Key here : " />
+            android:text="@string/enter_key"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
 
         <EditText
             android:id="@+id/keyText"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
+            android:layout_height="85dp"
+            android:layout_gravity="top|left"
             android:layout_below="@id/YourKeyText"
-            android:ems="10"
+            android:padding="10dp"
+            android:textSize="16sp"
             android:inputType="textMultiLine"
             android:lines="8"
-            android:maxLines="15" />
+            android:maxLines="15"
+            android:background="@drawable/round_text"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -65,15 +73,15 @@
             android:layout_below="@+id/keyText">
 
             <Button
-                android:id="@+id/EncodeButton"
+                android:id="@+id/EncryptButton"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_gravity="left"
-                android:onClick="encode"
+                android:onClick="encrypt"
                 android:paddingLeft="16dp"
                 android:paddingRight="16dp"
-                android:text="Encode" />
+                android:text="@string/Encrypt" />
 
             <Button
                 android:id="@+id/DecodeButton"
@@ -84,7 +92,7 @@
                 android:onClick="decode"
                 android:paddingLeft="16dp"
                 android:paddingRight="16dp"
-                android:text="Decode" />
+                android:text="@string/Decrypt" />
 
         </LinearLayout>
     </RelativeLayout>

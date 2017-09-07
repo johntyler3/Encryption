@@ -5,4 +5,5 @@
     <color name="colorAccent">#FF4081</color>
     <color name="grad_start">#303F9F</color>
     <color name="grad_end">#000000</color>
+    <color name="white">#ffffff</color>
 </resources>

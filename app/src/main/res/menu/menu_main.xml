@@ -2,5 +2,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item android:id="@+id/about"
-        android:title="About"/>
+        android:title="About Encrypt.Me" />
+    <item android:id="@+id/aes"
+        android:title="About AES" />
+    <item android:id="@+id/keys"
+        android:title="My Keys" />
 </menu>

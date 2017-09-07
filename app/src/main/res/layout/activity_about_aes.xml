@@ -5,14 +5,13 @@
     android:layout_height="fill_parent"
     android:orientation="vertical"
     android:background="@drawable/background_gradient"
-
     android:padding="5dp">
 
     <TextView
         android:id="@+id/about_text"
         android:layout_width="wrap_content"
         android:layout_height="fill_parent"
-        android:text="@string/about_string"
+        android:text="@string/about_aes_string"
         android:padding="10dp"
         android:textSize="20sp"
         android:textStyle="bold"

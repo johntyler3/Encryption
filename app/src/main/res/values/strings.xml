@@ -1,4 +1,19 @@
 <resources>
     <string name="app_name">Encrypt.Me</string>
-    <string name="about_string">This app uses the popular encrption algorithm AES to encrypt your text.</string>
+    <string name="enter_key">Enter your Key here : </string>
+    <string name="enter_message">Enter your Text here : </string>
+    <string name="your_key">Your Key : </string>
+    <string name="enc_key">The Encryption Key : </string>
+    <string name="enc_text">The Encrypted Text : </string>
+    <string name="Encrypt">Encrypt</string>
+    <string name="Decrypt">Decrypt</string>
+    <string name="new_key">New Key</string>
+    <string name="about_string">To keep unwanted eyes from viewing your private messages, encrypt them!!
+This app uses the popular Advanced Encryption Standard (AES) to encrypt your text.
+\n\n* First, enter the text you want to encrypt into the text box provided and hit the "Encode" button.
+You will be given your encrypted text along with a randomly generated key.
+\n\n* Next have the recipient enter your encrpyted text and your key to view your message.
+\n\n** Make sure and keep your key safe so that you can decrypt your messages later!! If you lose your key
+it is gone forever! ** </string>
+    <string name="about_aes_string">A little back history about aes</string>
 </resources>

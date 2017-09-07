@@ -4,50 +4,65 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
     tools:context="john.cipher.AES">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="5dp"
         android:orientation="vertical"
-        android:weightSum="1"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="2dp">
+        android:layout_gravity="center"
+        android:weightSum="1">
 
         <TextView
             android:id="@+id/editText4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             android:ems="20"
+            android:textStyle="bold"
+            android:textColor="@color/white"
             android:inputType="textPersonName"
-            android:text="The Encrypted Text : "
+            android:text="@string/enc_text"
             android:textSize="20sp"/>
 
         <EditText
             android:id="@+id/encryptedText"
             android:layout_width="match_parent"
-            android:layout_height="205dp"
+            android:layout_height="300dp"
+            android:layout_below="@id/editText4"
+            android:padding="10dp"
             android:text="TextView"
-            android:textSize="16sp"/>
+            android:textSize="16sp"
+            android:background="@drawable/round_text"/>
 
         <TextView
             android:id="@+id/editText3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_below="@id/encryptedText"
+            android:layout_marginTop="20dp"
             android:ems="20"
+            android:textStyle="bold"
+            android:textColor="@color/white"
             android:textSize="20sp"
             android:inputType="textPersonName"
-            android:text="The Encryption Key : " />
+            android:text="@string/enc_key" />
 
         <EditText
             android:id="@+id/key"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/encryptedText"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:layout_below="@+id/editText3"
+            android:layout_marginBottom="20dp"
+            android:padding="10dp"
             android:text="TextView"
-            android:textSize="16sp" />
-    </LinearLayout>
+            android:textSize="16sp"
+            android:background="@drawable/round_text"/>
+    </RelativeLayout>
 
 
 </android.support.constraint.ConstraintLayout>

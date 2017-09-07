@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".AES" />
         <activity android:name=".Decryption" />
-        <activity android:name=".About"></activity>
+        <activity android:name=".About" />
+        <activity android:name=".AboutAES" />
     </application>
 
 </manifest>
